@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Salary List</title>
+</head>
+<body>
+    <form th:action="@{/salary/all}" method="get">
+        <table>
+            <thead>
+                <tr>
+                    <th>January Salary</th> <!-- You can change this header if needed -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="item : ${salaryList}">
+                <td th:text="${item.jan}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
