@@ -6,9 +6,10 @@ spring:
     name: salary-service
 
   datasource:
-    url: jdbc:mysql://localhost:3306/salary_db
-    username: root
-    password: Sangharsh724
+    # Updated to use Aiven connection details:
+    url: jdbc:mysql://mysql-salary-service-salary-service.j.aivencloud.com:24151/defaultdb?useSSL=true&requireSSL=true
+    username: avnadmin
+    password: AVNS_rtIcBq5i6P4O12mQjg2
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   jpa:
