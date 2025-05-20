@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: salary-service
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./salary-service/Dockerfile
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: default
+      - key: PORT
+        value: 8082
