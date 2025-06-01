@@ -6,8 +6,7 @@ spring:
     name: salary-service
   datasource:
    url: jdbc:mysql-salary-service-salary-service.j.aivencloud.com:24151/defaultdb?useSSL=true&requireSSL=true
-
-    username: avnadmin
+   username: avnadmin
     password: ${salary_db_pass} # Replace with your actual password or use env var
   jpa:
     hibernate:
