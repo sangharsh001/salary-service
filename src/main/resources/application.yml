@@ -5,7 +5,8 @@ spring:
   application:
     name: salary-service
   datasource:
-    url: jdbc:mysql://mysql-salary-service-salary-service.j.aivencloud.com:24151/defaultdb?useSSL=true&requireSSL=true
+   url: jdbc:mysql://mysql-salary-service-salary-service.j.aivencloud.com:24151/defaultdb?useSSL=true&requireSSL=true
+
     username: avnadmin
     password: AVNS_rtIcBq5i6P4O12mQjg2   # Replace with your actual password or use env var
   jpa:
